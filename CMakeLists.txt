@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.10)
 # set toolchain
 set(CMAKE_TOOLCHAIN_FILE "/opt/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
-project(HelloWorld)
+project(helloworld)
 
 set(CMAKE_CXX_STANDARD 17)
-add_executable(${PROJECT_NAME} helloworld.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
 #---------- Link lib ------------
 find_package(fmt CONFIG REQUIRED)
