@@ -19,3 +19,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     jwt-cpp::jwt-cpp
     ${Boost_LIBRARIES}
 )
+
+#-------------- BUILD Release --------------------------------
+if(CMAKE_BUILD_TYPE STREQUAL "Release")
+    set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O3")
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
+endif()

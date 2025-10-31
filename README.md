@@ -4,6 +4,7 @@
 mkdir build
 cd build
 cmake -G Ninja .. && ninja
+
 # For release
 # cmake -G Ninja -DCMAKE_BUILD_TYPE=Release .. && ninja
 ```
